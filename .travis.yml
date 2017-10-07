@@ -14,7 +14,7 @@ before_install:
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx update
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key
-  --username $USERNAME --setdefaultdevhubusername -a HubOrg
+  --username $USERNAME --setdefaultdevhubusername -a HubOrg -r https://test.salesforce.com
 script:
 - sfdx force:source:convert -r force-app -d target
 - sfdx force:mdapi:deploy -d target -w 2 -u HubOrg
