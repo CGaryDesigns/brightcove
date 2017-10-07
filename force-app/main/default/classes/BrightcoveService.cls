@@ -47,13 +47,13 @@ global class BrightcoveService {
         req.setMethod('POST');
         req.setEndpoint(OAUTH_API_ENDPOINT + '/access_token');
         req.setBody(requestBody);
-        req.setHeader('Authorization',authorizationHeader);
+        req.setHeader('Authorization','Basic ' + authorizationHeader);
         req.setHeader('Content-Type','application/x-www-form-urlencoded');
         HttpResponse res;
         Http svc = new Http();
         try{
             res = svc.send(req);
-            if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('Response Error: ' + res.getStatusCode());
+            if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('Response Error: ' + res.getStatusCode() + '\nDetails: ' + res.getBody());
             //parse the response and get out the access token 
             Map<String,Object> objResultMap = (Map<String,Object>)JSON.deserializeUntyped(res.getBody());
             access_token = String.valueOf(objResultMap.get('access_token'));
