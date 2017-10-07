@@ -16,7 +16,7 @@ global class BrightcoveServiceMock implements HttpCalloutMock {
      * @return HttpResponse      the simulated HttpResponse
      **/
     global HttpResponse respond(HttpRequest req){
-        HttpResonse res = new HttpResponse();
+        HttpResponse res = new HttpResponse();
         res.setStatus('ERROR');
         res.setStatusCode(404);
         res.setHeader('Content-Type','application/json');
