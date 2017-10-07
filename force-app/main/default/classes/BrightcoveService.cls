@@ -41,7 +41,7 @@ global class BrightcoveService {
         //we need to build the request for the Access Token Call
         //this involves creating the Header and the Body for a post reqiest
         //create the Authorization Header
-        String authorizationHeader = EncodingUtl.base64Encode(Blob.valueOf(CLIENT_ID + ':' + CLIENT_SECRET));
+        String authorizationHeader = EncodingUtil.base64Encode(Blob.valueOf(CLIENT_ID + ':' + CLIENT_SECRET));
         String requestBody = 'grant_type=client_credentials';
         HttpRequest req = new HttpRequest();
         req.setMethod('POST');
@@ -53,7 +53,7 @@ global class BrightcoveService {
         Http svc = new Http();
         try{
             res = svc.send(req);
-            if(res.getStatusCode != 200) throw new Brightcove.GeneralException('Response Error: ' + res.getStatusCode());
+            if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('Response Error: ' + res.getStatusCode());
             //parse the response and get out the access token 
             Map<String,Object> objResultMap = (Map<String,Object>)JSON.deserializeUntyped(res.getBody());
             access_token = String.valueOf(objResultMap.get('access_token'));
