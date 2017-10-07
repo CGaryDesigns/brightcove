@@ -45,7 +45,7 @@ global class BrightcoveService {
         String requestBody = 'grant_type=client_credentials';
         HttpRequest req = new HttpRequest();
         req.setMethod('POST');
-        req.setEndpoint(OAUTH_API_ENDPOINT);
+        req.setEndpoint(OAUTH_API_ENDPOINT + '/access_token');
         req.setBody(requestBody);
         req.setHeader('Authorization',authorizationHeader);
         req.setHeader('Content-Type','application/x-www-form-urlencoded');
