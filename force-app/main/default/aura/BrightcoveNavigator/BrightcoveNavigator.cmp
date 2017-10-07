@@ -1,0 +1,18 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader" access="global" description="Component that provides the ability to navigate a Brightcove Video Library">
+
+    <aura:attribute name="breadcrumbMap" type="Map" access="public" required="false" default="{}"/>
+    <aura:attribute name="breadcrumbList" type="String[]" access="public" required="false" default="[]"/>
+
+    <div class="slds-grid slds-grid_pull-padded-medium">
+        <div class="slds-col slds-p-horizontal_medium">
+            <lightning:breadcrumbs title="Folder Navigation">
+                <lightning:breadcrumb label="Home" name="Home" title="Home" />
+
+                <aura:iteration items="{!v.breadcrumbList}" var="breadcrumbKey" indexVar="bradcrumbCount">
+                <lightning:breadcrumb label="{!v.breadcrumbMap[breadcrumbKey]}" name="{!breadcrumbKey}" title="{!v.breadcrumbMap[breadcrumbKey]}"/>
+                </aura:iteration>
+                
+            </lightning:breadcrumbs>
+        </div>
+    </div>
+</aura:component>	
