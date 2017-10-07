@@ -21,8 +21,8 @@ associated with an article to display a player within the community.
 
 ## Description of Files and Directories
 This project was created using Salesforce DX.
-force-app/main/default - contains primary source code
-target/ - the directory that the source code should be converted into.
+* force-app/main/default - contains primary source code
+* target/ - the directory that the source code should be converted into.
 
 
 ## Issues
