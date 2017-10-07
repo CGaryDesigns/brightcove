@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VideoId__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>The Video ID from Brightcove - a unique Identifier.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>The Video ID from Brightcove - a unique Identifier.</inlineHelpText>
+    <label>Video ID</label>
+    <length>120</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

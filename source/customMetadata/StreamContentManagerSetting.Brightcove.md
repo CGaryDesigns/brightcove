@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Brightcove</label>
+    <protected>false</protected>
+    <values>
+        <field>ClientID__c</field>
+        <value xsi:type="xsd:string">9333eaf9-b0f5-4fdc-9bcb-454677a3af05</value>
+    </values>
+    <values>
+        <field>ClientSecret__c</field>
+        <value xsi:type="xsd:string">Mh-B-jUuAfjRdlPXSkLQp3gZ-mKu7Pht4b7puyUoT84suSxbQ8QfQ_A9oZFZk6gUFebugeRPnImpDBcpbniq9w</value>
+    </values>
+    <values>
+        <field>EndpointUrl__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

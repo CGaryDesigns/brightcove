@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Information regarding Streaming Content Management Systems that have been integrated with Salesfoce</description>
+    <label>Stream Content Manager Setting</label>
+    <pluralLabel>Stream Content Manager Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

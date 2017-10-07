@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brightcove</fullName>
+    <description>Resources for Brightcove Integration system.</description>
+    <types>
+        <members>BrightcoveVideo__c.Description__c</members>
+        <members>BrightcoveVideo__c.FolderId__c</members>
+        <members>BrightcoveVideo__c.LongDescription__c</members>
+        <members>BrightcoveVideo__c.VideoId__c</members>
+        <members>StreamContentManagerSetting__mdt.ClientID__c</members>
+        <members>StreamContentManagerSetting__mdt.ClientSecret__c</members>
+        <members>StreamContentManagerSetting__mdt.EndpointUrl__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>StreamContentManagerSetting.Brightcove</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>BrightcoveVideo__c</members>
+        <members>StreamContentManagerSetting__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>BrightcoveVideo__c-Brightcove Video Layout</members>
+        <members>StreamContentManagerSetting__mdt-Stream Content Manager Setting Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>BrightcoveCMSAPI</members>
+        <members>BrightcoveOAuthAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>40.0</version>
+</Package>
