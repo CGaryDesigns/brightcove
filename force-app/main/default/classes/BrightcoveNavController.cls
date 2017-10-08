@@ -4,11 +4,9 @@
  *                Navigation Component
  **/
 global class BrightcoveNavController {
-    @AuraEnabled
+    
     public class FolderBreadcrumb {
-        @AuraEnabled 
         public String label { get; set; }
-        @AuraEnabled 
         public String folderId { get; set; }
     }
 
