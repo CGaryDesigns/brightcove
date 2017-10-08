@@ -1,15 +1,16 @@
 <aura:component implements="force:lightningQuickActionWithoutHeader" access="global" description="Component that provides the ability to navigate a Brightcove Video Library" controller="BrightcoveNavController">
 
-   <aura:attrbute name="breadcrumbList" type="BrightcoveNavController.FolderBreadcrumb[]" access="global" />
+   <aura:attribute name="breadcrumbList" type="BrightcoveNavController.FolderBreadcrumb[]" access="global" />
 
     <div class="slds-grid slds-grid_pull-padded-medium">
         <div class="slds-col slds-p-horizontal_medium">
             <lightning:breadcrumbs title="Folder Navigation">
                 <lightning:breadcrumb label="Home" name="Home" title="Home" />
-                
+
                 <aura:iteration items="{!v.breadcrumbList}" var="breadcrumb" indexVar="breadcrumbcount">
                 <lightning:breadcrumb label="{!breadcrumb.label}" name="{!bradcrumb.folderId}" title="{!breadcrumb.label}"/>
                 </aura:iteration>
+                
             </lightning:breadcrumbs>
         </div>
     </div>
