@@ -9,6 +9,7 @@ global class BrightcoveService {
     private static String CLIENT_SECRET;
     private static String CMS_API_ENDPOINT;
     private static String OAUTH_API_ENDPOINT;
+    private static String ACCOUNT_ID;
 
     /**
      * @description: this constructor is used to set the values of the static
@@ -23,6 +24,7 @@ global class BrightcoveService {
             Url baseEndpoint = new Url(metaDataSetting.EndpointUrl__c);
             CMS_API_ENDPOINT  = 'https://cms.api.' + baseEndpoint.getHost() + '/v1';
             OAUTH_API_ENDPOINT = 'https://oauth.' + baseEndpoint.getHost() + '/v4';
+            ACCOUNT_ID = '1464976798001';
         } catch(System.Exception ex){
             throw new Brightcove.GeneralException(ex.getMessage());
         }
@@ -62,5 +64,37 @@ global class BrightcoveService {
         }
 
         return access_token;
+    }
+
+    public static List<Brightcove.Folder> GetFolderList(Integer offset){
+        List<Brightcove.Folder> folderList;
+        //first get the Access token
+        String access_token;
+        try{
+            access_token = ObtainAccessToken();
+        }catch(System.Exception ex){
+            throw ex;
+        }
+        //lets build the folder URL
+        String folderRequestUrl = CMS_API_ENDPOINT + '/accounts/' + ACCOUNT_ID + '/folders?limit=50';
+        if(offset != null && offset > 0){
+            folderRequestUrl += '&offset=' + offset;
+        }
+        //now lets build the folder Request
+        HttpRequest req = new HttpRequest();
+        req.setMethod('GET');
+        req.setEndpoint(folderRequestUrl);
+        req.setHeader('Content-Type','application/json');
+        req.setHeader('Authorization','Bearer ' + access_token);
+        HttpResponse res;
+        Http svc = new Http();
+        try{
+            res = svc.send(req);
+            if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('There was a problem getting folders. Status Code: ' + res.getStatusCode());
+            folderList = (List<Brightcove.Folder>)JSON.deserialize(res.getBody(), List<Brightcove.Folder>.class);
+        }catch(System.Exception ex){
+            throw new Brightcove.GeneralException('There was an error obtaining the folders: ' + ex.getMessage());
+        }
+        return folderList;
     }
 }
