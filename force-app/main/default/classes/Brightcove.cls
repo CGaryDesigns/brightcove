@@ -32,30 +32,25 @@ global class Brightcove {
         public String clip_source_video_id { get; set; }
         public Boolean complete { get; set; }
         public String created_at { get; set; }
-        //public List<Brightcove.CuePoint> cue_points { get; set; }
-        public String custom_fields { get; set; }
-        public String manifest_id { get; set; }
+        public List<Brightcove.CuePoint> cue_points { get; set; }
+        public Msp<String,String> custom_fields { get; set; }
         public String description { get; set; }
         public String digital_master_id { get; set; }
-        //public Integer milliseconds { get; set; }
         public String economics { get; set; }
         public String folder_id { get; set; }
-        //public Map<String,Brightcove.Geo> geo { get; set; }
+        public Map<String,Brightcove.Geo> geo { get; set; }
         public Boolean has_digital_master { get; set; }
         public String id { get; set; }
-        //public Map<String,Brightcove.Image> images { get; set; } 
+        public Map<String,Brightcove.Image> images { get; set; } 
         public String long_description { get; set; }
         public String name { get; set; }
-        public Boolean offline_enabled { get; set; }
         public String original_filename { get; set; }
         public String projection { get; set; }
         public String published_at { get; set; }
         public String reference_id { get; set; }
-        //public Brightcove.Schedule schedule { get; set; }
-        public String smooth_client_manifest_id { get; set; }
-        public String smooth_server_manifest_id { get; set; }
+        public Brightcove.Schedule schedule { get; set; }
         public String state { get; set; }
-        //public List<String> tags { get; set; }
+        public List<String> tags { get; set; }
         public String updated_at { get; set; }
 
     }
@@ -78,11 +73,18 @@ global class Brightcove {
         public String asset_id { get; set; }
         public Boolean remote { get; set; }
         public String src { get; set; }
+        public List<Brightcove.Source> sources { get; set; }
     }
 
     public class Schedule { 
         public String ends_at { get; set; }
         public String starts_at { get; set; }
+    }
+
+    public class Source { 
+        public String src { get; set; }
+        public Integer height { get; set; }
+        public Integer width { get; set; }
     }
 }
 

@@ -1,0 +1,661 @@
+[ {
+  "id" : "5476455983001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T15:39:56.450Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476463206001",
+  "duration" : 37268,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476463385001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463385001_5476455983001-th.jpg?pubId=1464976798001&videoId=5476455983001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463385001_5476455983001-th.jpg?pubId=1464976798001&videoId=5476455983001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463385001_5476455983001-th.jpg?pubId=1464976798001&videoId=5476455983001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476463505001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463505001_5476455983001-vs.jpg?pubId=1464976798001&videoId=5476455983001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463505001_5476455983001-vs.jpg?pubId=1464976798001&videoId=5476455983001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476463505001_5476455983001-vs.jpg?pubId=1464976798001&videoId=5476455983001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "FHEG Field Leadership - Together We are Follett (with blooper reel)",
+  "original_filename" : "field-leadership-blooper.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T15:39:56.450Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T15:40:53.957Z"
+}, {
+  "id" : "5476317246001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:50:49.883Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335103001",
+  "duration" : 188587,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476335200001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335200001_5476317246001-th.jpg?pubId=1464976798001&videoId=5476317246001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335200001_5476317246001-th.jpg?pubId=1464976798001&videoId=5476317246001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335200001_5476317246001-th.jpg?pubId=1464976798001&videoId=5476317246001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476337149001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337149001_5476317246001-vs.jpg?pubId=1464976798001&videoId=5476317246001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337149001_5476317246001-vs.jpg?pubId=1464976798001&videoId=5476317246001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337149001_5476317246001-vs.jpg?pubId=1464976798001&videoId=5476317246001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Annual Meeting Memorial for KentFollett_1938-2017",
+  "original_filename" : "KentFollett_1938-2017_v101.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:50:49.883Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T14:00:11.149Z"
+}, {
+  "id" : "5476329759001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:51:21.394Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : "Short overview of Follett Corporation",
+  "digital_master_id" : "5476337517001",
+  "duration" : 133503,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476337417001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337417001_5476329759001-th.jpg?pubId=1464976798001&videoId=5476329759001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337417001_5476329759001-th.jpg?pubId=1464976798001&videoId=5476329759001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337417001_5476329759001-th.jpg?pubId=1464976798001&videoId=5476329759001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476339690001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339690001_5476329759001-vs.jpg?pubId=1464976798001&videoId=5476329759001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339690001_5476329759001-vs.jpg?pubId=1464976798001&videoId=5476329759001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339690001_5476329759001-vs.jpg?pubId=1464976798001&videoId=5476329759001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Transforming for Growth; Follett Corporation",
+  "original_filename" : "Open video FINAL 061417.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:51:21.394Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:59:33.628Z"
+}, {
+  "id" : "5476333535001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:48:27.470Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : "Woody and Eric present the current technology tools B2B is using today in the marketplace",
+  "digital_master_id" : "5476334750001",
+  "duration" : 690560,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476335995001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335995001_5476333535001-th.jpg?pubId=1464976798001&videoId=5476333535001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335995001_5476333535001-th.jpg?pubId=1464976798001&videoId=5476333535001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335995001_5476333535001-th.jpg?pubId=1464976798001&videoId=5476333535001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476334755001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334755001_5476333535001-vs.jpg?pubId=1464976798001&videoId=5476333535001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334755001_5476333535001-vs.jpg?pubId=1464976798001&videoId=5476333535001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334755001_5476333535001-vs.jpg?pubId=1464976798001&videoId=5476333535001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "B2B Woody Hunt & Eric Newman presentation ",
+  "original_filename" : "Edit 2.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:48:27.470Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:57:56.142Z"
+}, {
+  "id" : "5476336768001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:51:51.067Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476337569001",
+  "duration" : 126400,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476339708001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339708001_5476336768001-th.jpg?pubId=1464976798001&videoId=5476336768001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339708001_5476336768001-th.jpg?pubId=1464976798001&videoId=5476336768001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339708001_5476336768001-th.jpg?pubId=1464976798001&videoId=5476336768001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476339798001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339798001_5476336768001-vs.jpg?pubId=1464976798001&videoId=5476336768001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339798001_5476336768001-vs.jpg?pubId=1464976798001&videoId=5476336768001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476339798001_5476336768001-vs.jpg?pubId=1464976798001&videoId=5476336768001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Waymaker Overview_052617",
+  "original_filename" : "Waymaker Overview_052617.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:51:51.067Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:54:22.683Z"
+}, {
+  "id" : "5476333553001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:51:01.145Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335177001",
+  "duration" : 235172,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476337383001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337383001_5476333553001-th.jpg?pubId=1464976798001&videoId=5476333553001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337383001_5476333553001-th.jpg?pubId=1464976798001&videoId=5476333553001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337383001_5476333553001-th.jpg?pubId=1464976798001&videoId=5476333553001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476337114001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337114001_5476333553001-vs.jpg?pubId=1464976798001&videoId=5476333553001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337114001_5476333553001-vs.jpg?pubId=1464976798001&videoId=5476333553001",
+        "height" : 270,
+        "width" : 480
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476337114001_5476333553001-vs.jpg?pubId=1464976798001&videoId=5476333553001",
+        "height" : 270,
+        "width" : 480
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Nadir Live Demo",
+  "original_filename" : "Nadir Live Demo.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:51:01.145Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:51:55.476Z"
+}, {
+  "id" : "5476327832001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:49:10.114Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476334846001",
+  "duration" : 127700,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476336009001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476336009001_5476327832001-th.jpg?pubId=1464976798001&videoId=5476327832001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476336009001_5476327832001-th.jpg?pubId=1464976798001&videoId=5476327832001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476336009001_5476327832001-th.jpg?pubId=1464976798001&videoId=5476327832001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476334615001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334615001_5476327832001-vs.jpg?pubId=1464976798001&videoId=5476327832001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334615001_5476327832001-vs.jpg?pubId=1464976798001&videoId=5476327832001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334615001_5476327832001-vs.jpg?pubId=1464976798001&videoId=5476327832001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Follett Discover branded website CTA 1280x720",
+  "original_filename" : "Follett Discover branded website CTA 1280x720.mov",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:49:10.114Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:50:04.366Z"
+}, {
+  "id" : "5476317152001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:48:37.127Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335829001",
+  "duration" : 30933,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476335919001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335919001_5476317152001-th.jpg?pubId=1464976798001&videoId=5476317152001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335919001_5476317152001-th.jpg?pubId=1464976798001&videoId=5476317152001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335919001_5476317152001-th.jpg?pubId=1464976798001&videoId=5476317152001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476335830001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335830001_5476317152001-vs.jpg?pubId=1464976798001&videoId=5476317152001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335830001_5476317152001-vs.jpg?pubId=1464976798001&videoId=5476317152001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335830001_5476317152001-vs.jpg?pubId=1464976798001&videoId=5476317152001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Final Break 2",
+  "original_filename" : "Final Break 2.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:48:37.127Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:49:13.161Z"
+}, {
+  "id" : "5476317151001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:47:51.980Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335803001",
+  "duration" : 42027,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476335891001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335891001_5476317151001-th.jpg?pubId=1464976798001&videoId=5476317151001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335891001_5476317151001-th.jpg?pubId=1464976798001&videoId=5476317151001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335891001_5476317151001-th.jpg?pubId=1464976798001&videoId=5476317151001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476334551001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334551001_5476317151001-vs.jpg?pubId=1464976798001&videoId=5476317151001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334551001_5476317151001-vs.jpg?pubId=1464976798001&videoId=5476317151001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334551001_5476317151001-vs.jpg?pubId=1464976798001&videoId=5476317151001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Break_1",
+  "original_filename" : "Break_1.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:47:51.980Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:48:29.973Z"
+}, {
+  "id" : "5476317150001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:47:37.060Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335791001",
+  "duration" : 41557,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476335878001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335878001_5476317150001-th.jpg?pubId=1464976798001&videoId=5476317150001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335878001_5476317150001-th.jpg?pubId=1464976798001&videoId=5476317150001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476335878001_5476317150001-th.jpg?pubId=1464976798001&videoId=5476317150001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476334546001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334546001_5476317150001-vs.jpg?pubId=1464976798001&videoId=5476317150001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334546001_5476317150001-vs.jpg?pubId=1464976798001&videoId=5476317150001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334546001_5476317150001-vs.jpg?pubId=1464976798001&videoId=5476317150001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "Before Lunch",
+  "original_filename" : "Before Lunch.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:47:37.060Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:48:21.847Z"
+}, {
+  "id" : "5476333531001",
+  "account_id" : "1464976798001",
+  "ad_keys" : null,
+  "clip_source_video_id" : null,
+  "complete" : true,
+  "created_at" : "2017-06-19T13:47:32.232Z",
+  "cue_points" : [ ],
+  "custom_fields" : { },
+  "delivery_type" : "static_origin",
+  "description" : null,
+  "digital_master_id" : "5476335959001",
+  "duration" : 39402,
+  "economics" : "AD_SUPPORTED",
+  "folder_id" : "5947d5c73bfb3d2c32269e59",
+  "geo" : null,
+  "has_digital_master" : true,
+  "images" : {
+    "thumbnail" : {
+      "asset_id" : "5476334095001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334095001_5476333531001-th.jpg?pubId=1464976798001&videoId=5476333531001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334095001_5476333531001-th.jpg?pubId=1464976798001&videoId=5476333531001",
+        "height" : 90,
+        "width" : 160
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334095001_5476333531001-th.jpg?pubId=1464976798001&videoId=5476333531001",
+        "height" : 90,
+        "width" : 160
+      } ]
+    },
+    "poster" : {
+      "asset_id" : "5476334097001",
+      "remote" : false,
+      "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334097001_5476333531001-vs.jpg?pubId=1464976798001&videoId=5476333531001",
+      "sources" : [ {
+        "src" : "http://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334097001_5476333531001-vs.jpg?pubId=1464976798001&videoId=5476333531001",
+        "height" : 720,
+        "width" : 1280
+      }, {
+        "src" : "https://f1.media.brightcove.com/8/1464976798001/1464976798001_5476334097001_5476333531001-vs.jpg?pubId=1464976798001&videoId=5476333531001",
+        "height" : 720,
+        "width" : 1280
+      } ]
+    }
+  },
+  "link" : null,
+  "long_description" : null,
+  "name" : "After Lunch",
+  "original_filename" : "After Lunch.mp4",
+  "projection" : null,
+  "published_at" : "2017-06-19T13:47:32.232Z",
+  "reference_id" : null,
+  "schedule" : null,
+  "sharing" : null,
+  "state" : "ACTIVE",
+  "tags" : [ ],
+  "text_tracks" : [ ],
+  "updated_at" : "2017-06-19T13:48:19.836Z"
+} ]
