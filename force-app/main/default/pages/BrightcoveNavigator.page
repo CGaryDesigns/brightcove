@@ -1,0 +1,34 @@
+<apex:page
+    applyBodyTag="false"
+    applyHtmlTag="false"
+    cache="false"
+    contentType="text/html"
+    doctype="html-5.0"
+    id="BrightcoveNavigator"
+    label="BrightCoveNavigator"
+    language="en-US"
+    lightningStylesheets="true"
+    name="BrightcoveNavigator"
+    showChat="false"
+    showHeader="false"
+    sidebar="false"
+    title="Brightcove Navigator">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+    </head>
+    
+    <body>
+        <apex:slds/>
+
+        <div class="slds-scope">
+            <div class="slds-grid slds-grid_pull-padded-medium">
+                <div class="slds-col slds-p-horizontal_medium">
+                    <h2 class="slds-text-title_caps">Brightcove Navigator</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+</apex:page>
