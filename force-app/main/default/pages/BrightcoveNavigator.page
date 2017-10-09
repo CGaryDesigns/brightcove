@@ -14,9 +14,10 @@
     sidebar="false"
     title="Brightcove Navigator">
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
+    
     <head>
-        
+        <title>Brightcove Navigator</title>
+        <apex:includeScript id="AngularJSCore" value="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"/>
     </head>
     
     <body>
@@ -28,8 +29,25 @@
                     <h2 class="slds-text-title_caps">Brightcove Navigator</h2>
                 </div>
             </div>
+
+            <!-- BEGIN: spinner -->
+            <div class="demo-only">
+                <div role="status" class="slds-spinner slds-spinner_brand slds-spinner_large">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+            <!-- END: spinner -->
         </div>
+
+
+
     </body>
+
+    <script type="text/javascript">
+
+    </script>
 
 </html>
 </apex:page>
