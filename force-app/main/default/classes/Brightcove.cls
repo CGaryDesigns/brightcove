@@ -37,7 +37,7 @@ global class Brightcove {
         public String manifest_id { get; set; }
         public String description { get; set; }
         public String digital_master_id { get; set; }
-        public Long milliseconds { get; set; }
+        public Integer milliseconds { get; set; }
         public String economics { get; set; }
         public String folder_id { get; set; }
         public Map<String,Brightcove.Geo> geo { get; set; }
@@ -79,7 +79,7 @@ global class Brightcove {
         public Boolean remote { get; set; }
         public String src { get; set; }
     }
-    
+
     public class Schedule { 
         public String ends_at { get; set; }
         public String starts_at { get; set; }
