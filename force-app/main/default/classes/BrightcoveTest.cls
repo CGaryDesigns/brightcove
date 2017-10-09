@@ -36,7 +36,7 @@ private class BrightcoveTest {
     @isTest
     static void Folder(){
         Test.startTest();
-        Brightcove.Folder testObj = new Brightcove.Brightcove.Folder();
+        Brightcove.Folder testObj = new Brightcove.Folder();
         testObj.id = '12345';
         testObj.account_id = '3rgqrwtw5gw3rgw3g3';
         testObj.name = 'Test Folder';
