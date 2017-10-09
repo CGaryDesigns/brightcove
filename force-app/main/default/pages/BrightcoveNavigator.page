@@ -31,7 +31,7 @@
             </div>
 
             <!-- BEGIN: spinner -->
-            <div class="demo-only">
+            <div class="demo-only slds-hide">
                 <div role="status" class="slds-spinner slds-spinner_brand slds-spinner_large">
                     <span class="slds-assistive-text">Loading</span>
                     <div class="slds-spinner__dot-a"></div>

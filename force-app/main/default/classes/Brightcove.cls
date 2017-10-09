@@ -31,7 +31,7 @@ global class Brightcove {
         public String ad_keys { get; set; }
         public String clip_source_video_id { get; set; }
         public Boolean complete { get; set; }
-        public Long created_at { get; set; }
+        public String created_at { get; set; }
         public List<Brightcove.CuePoint> cue_points { get; set; }
         public String custom_fields { get; set; }
         public String manifest_id { get; set; }
@@ -59,6 +59,7 @@ global class Brightcove {
         public String updated_at { get; set; }
 
     }
+
     public class CuePoint { 
         public String id { get; set; }
         public Boolean force_stop { get; set; }
@@ -66,16 +67,19 @@ global class Brightcove {
         public String name { get; set; }
         public String type { get; set; }
     }
+
     public class Geo { 
         public List<String> countries { get; set; }
         public Boolean exclude_countries { get; set; }
         public Boolean restricted { get; set; }
     }
+
     public class Image { 
         public String asset_id { get; set; }
         public Boolean remote { get; set; }
         public String src { get; set; }
     }
+    
     public class Schedule { 
         public String ends_at { get; set; }
         public String starts_at { get; set; }
