@@ -140,7 +140,7 @@ global class BrightcoveService {
             res = svc.send(req);
             if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('There was a problem getting videos: Error Code: ' + res.getStatusCode() + ' - ' + res.getBody());
             System.debug(LoggingLevel.INFO,'\n\nVideo Data Returned: ' + res.getBody() + '\n\n');
-            videoList = (List<Brightcove.Video>)JSON.deserialize(res.getBody(), List<Brightcove.Video>.class);
+            //videoList = (List<Brightcove.Video>)JSON.deserialize(res.getBody(), List<Brightcove.Video>.class);
         } catch(System.Exception ex) {
             throw new Brightcove.GeneralException('There was an error obtaining the videos: ' + ex.getMessage());
         }
