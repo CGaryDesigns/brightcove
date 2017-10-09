@@ -65,8 +65,15 @@ global class BrightcoveService {
 
         return access_token;
     }
-
-    public static List<Brightcove.Folder> GetFolderList(Integer offset){
+    /**
+     * @description: The purpose of this method is to get the full list of folders from Brightcove.
+     *               the key thing to note is that the method can can only return 100 records at a
+     *               time, so if there are more than that, then it will need to be called with an
+     *               offset to get the other items
+     * @param Integer offset - this is the offset to pass into the API as a parameter.
+     * @return List<Brightcove.Folder> list of folder objects returned.
+     **/
+    public static List<Brightcove.Folder> ObtainFolderList(Integer offset){
         List<Brightcove.Folder> folderList;
         //first get the Access token
         String access_token;
@@ -96,5 +103,46 @@ global class BrightcoveService {
             throw new Brightcove.GeneralException('There was an error obtaining the folders: ' + ex.getMessage());
         }
         return folderList;
+    }
+    /**
+     * @description: The purpose of this method is to get the full list of all of the videos 
+     *               within a folder. The key thing to note is that this method can only
+     *               return 20 videos at a time, so if a folder has more than 20 videos,
+     *               then this method will need to be called with an offset to get the next
+     *               videos
+     * @param String folderId                   -the folder Id to use
+     * @param integer offset                    - the offset to retrieve the videos starting at.
+     * @return List<Brightcove.Video>           -the list of videos that are returned.
+     **/
+    public static List<Brightcove.Video> ObtainVideosInFolder(String folderId, Integer offset){
+        if(String.isEmpty(folderId)) throw new Brightcove.GeneralException('The folder Id cannot be blank.');
+        List<Brightcove.Video> videoList;
+        //first get the access_token
+        String access_token;
+        try{
+            access_token = ObtainAccessToken();
+        } catch(System.Exception ex) {
+            throw ex;
+        }
+        String videoUrl = CMS_API_ENDPOINT + '/accounts/' + ACCOUNT_ID + '/folders/' + folderId + '/videos?limit=30';
+        if(offset != null && offset > 0){
+            videoUrl += '&offset=' + offset;
+        }
+        //now lets build the video request
+        HttpRequest req = new HttpRequest();
+        req.setMethod('GET');
+        req.setEndpoint(videoUrl);
+        req.setHeader('Content-Type','application/json');
+        req.setHeader('Authorization','Bearer ' + access_token);
+        HttpResponse res;
+        Http svc = new Http();
+        try {
+            res = svc.send(req);
+            if(res.getStatusCode() != 200) throw new Brightcove.GeneralException('There was a problem getting videos: Error Code: ' + res.getStatusCode() + ' - ' + res.getBody());
+            videoList = (List<Brightcove.Video>)JSON.deserialize(res.getBody(), List<Brightcove.Video>.class);
+        } catch(System.Exception ex) {
+            throw Brightcove.GeneralException('There was an error obtaining the videos: ' + ex.getMessage());
+        }
+        return videoList;
     }
 }

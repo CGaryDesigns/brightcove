@@ -32,4 +32,68 @@ private class BrightcoveTest {
         }
         Test.stopTest();
     }
+
+    @isTest
+    static void Folder(){
+        Test.startTest();
+        Brightcove.Folder testObj = new Brightcove.Brightcove.Folder();
+        testObj.id = '12345';
+        testObj.account_id = '3rgqrwtw5gw3rgw3g3';
+        testObj.name = 'Test Folder';
+        testObj.created_at = '2017-01-01 12:35:17.000';
+        testObj.video_count = 123;
+        testObj.version = 1;
+        testObj.updated_at = '2017-01-02 13:00:00.000';
+        Test.stopTest();
+    }
+
+    @isTest
+    static void Schedule(){
+        Test.startTest();
+
+        Brightcove.Schedule testObj = new Brightcove.Schedule();
+        testObj.ends_at = '2017-12-31 12:00:00.000';
+        testObj.starts_at = '2017-01-01 12:00:00.000';
+
+        Test.stopTest();
+    }
+
+    @isTest
+    static void Image(){
+        Test.startTest();
+
+        Brightcove.Image img = new Brightcove.Image();
+        img.asset_id = '123456';
+        img.remote = false;
+        img.src = 'http://www.google.com/image.png';
+
+        Test.stopTest();
+    }
+
+    @isTest
+    static void Geo(){
+        Test.startTest();
+
+        Brightcove.Geo testObj = new Brightcove.Geo();
+        testObj.countries = new List<String>();
+        testObj.exclude_countries = false;
+        testObj.restricted = false;
+
+        Test.stopTest();
+    }
+
+    @isTest
+    static void CuePoint(){
+        Test.startTest();
+
+        Brightcove.CuePoint testObj = new Brightcove.CuePoint();
+        testObj.id = '48y9284298';
+        testObj.force_stop = false;
+        testObj.metadata = 'test1=foo&test2=bar';
+        testObj.name = 'Cue_point_1';
+        testObj.time = 1.2345245;
+        testObj.type = 'Video';
+        
+        Test.stopTest();
+    }
 }
