@@ -91,9 +91,8 @@ private class BrightcoveTest {
         testObj.force_stop = false;
         testObj.metadata = 'test1=foo&test2=bar';
         testObj.name = 'Cue_point_1';
-        testObj.time = 1.2345245;
         testObj.type = 'Video';
-        
+
         Test.stopTest();
     }
 }

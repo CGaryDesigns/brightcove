@@ -24,13 +24,18 @@ global class BrightcoveServiceMock implements HttpCalloutMock {
         //request
         Url requestedEndUrl = new Url(req.getEndpoint());
         String urlPath = requestedEndUrl.getPath();
-        if(urlPath == '/v4/access_token'){
+        if(urlPath.endsWith('/access_token')){
             res.setStatus('SUCCESS');
             res.setStatusCode(200);
             res.setHeader('Content-Type','application/json');
             res.setBody(AccessTokenResponse());
+        } else if(urlPath.contains('folders?limit=50')) {
+            res.setStatus('SUCCESS');
+            res.setStatusCode(200);
+            res.setHeader('Content-Type','application/json');
+            res.setBody(FolderListResponse());
         }
-        return null;
+        return res;
     }
 
     private static String AccessTokenResponse(){
@@ -41,5 +46,30 @@ global class BrightcoveServiceMock implements HttpCalloutMock {
             gen.writeNumberField('expires_in', 300);
         gen.writeEndObject();                   
         return gen.getAsString();
+    }
+    private static String FolderListResponse(){
+        List<Brightcove.Folder> folderObj = new List<Brightcove.Folder>();
+        for(Integer i=0;i<3;i++){
+            Brightcove.Folder folderTest = new Brightcove.Folder();
+            folderTest.account_id = '123455';
+            folderTest.created_at = '2017-01-01 12:00:00.000';
+            folderTest.name = GenerateRandomString(10);
+            folderTest.id = GenerateRandomString(8);
+            folderTest.version = 1;
+            folderTest.updated_at = Date.today().format();
+            folderTest.video_count = 20;
+            folderObj.add(folderTest);
+        }
+        return JSON.serialize(folderObj);
+    }
+    private String GenerateRandomString(Integer charLength){
+        List<String> charBucket = new List<String>{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
+                                                   'r','s','t','u','v','w','x','y','z'};
+        String finalString = '';
+        for(Integer i=0;i<charLength;i++){
+            finalString += charBucket.get(Integer.valueOf(Math.floor(Math.random() * charBucket.size())));
+        }
+        return finalString;
+
     }
 }

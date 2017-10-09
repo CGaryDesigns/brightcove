@@ -32,7 +32,7 @@ global class Brightcove {
         public String clip_source_video_id { get; set; }
         public Boolean complete { get; set; }
         public Long created_at { get; set; }
-        public List<Brightcove.Brightcove.CuePoint> cue_points { get; set; }
+        public List<Brightcove.CuePoint> cue_points { get; set; }
         public String custom_fields { get; set; }
         public String manifest_id { get; set; }
         public String description { get; set; }
@@ -64,7 +64,6 @@ global class Brightcove {
         public Boolean force_stop { get; set; }
         public String metadata { get; set; }
         public String name { get; set; }
-        public Double time { get; set; }
         public String type { get; set; }
     }
     public class Geo { 
