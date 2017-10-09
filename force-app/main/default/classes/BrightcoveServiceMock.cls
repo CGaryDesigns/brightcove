@@ -62,7 +62,7 @@ global class BrightcoveServiceMock implements HttpCalloutMock {
         }
         return JSON.serialize(folderObj);
     }
-    private String GenerateRandomString(Integer charLength){
+    private static String GenerateRandomString(Integer charLength){
         List<String> charBucket = new List<String>{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
                                                    'r','s','t','u','v','w','x','y','z'};
         String finalString = '';
