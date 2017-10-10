@@ -87,4 +87,3 @@ global class Brightcove {
         public Integer width { get; set; }
     }
 }
-

@@ -1,9 +1,8 @@
-<apex:page
-    applyBodyTag="false"
+<apex:page applyBodyTag="false"
     applyHtmlTag="false"
     cache="false"
     contentType="text/html"
-    controller="BrightcovenavController"
+    controller="BrightcoveNavController"
     doctype="html-5.0"
     id="BrightcoveNavigator"
     label="BrightCoveNavigator"
@@ -22,7 +21,7 @@
         <title>Brightcove Navigator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <apex:includeScript id="AngularJSCore" value="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"/>
-        <apex:slds/>
+        <apex:slds />
     </head>
     
     <body ng-app="pageApp">
