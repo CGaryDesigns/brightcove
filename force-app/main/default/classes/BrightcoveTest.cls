@@ -66,6 +66,19 @@ private class BrightcoveTest {
         img.asset_id = '123456';
         img.remote = false;
         img.src = 'http://www.google.com/image.png';
+        img.sources = new List<Brightcove.Source>();
+
+        Test.stopTest();
+    }
+
+    @isTest
+    static void Source(){
+        Test.startTest();
+
+        Brightcove.Source testObj = new Brightcove.Source();
+        testObj.src = 'http://www.google.com/image.png';
+        testObj.height = 100;
+        testObj.width = 100;
 
         Test.stopTest();
     }
@@ -92,6 +105,40 @@ private class BrightcoveTest {
         testObj.metadata = 'test1=foo&test2=bar';
         testObj.name = 'Cue_point_1';
         testObj.type = 'Video';
+
+        Test.stopTest();
+    }
+
+    @isTest
+    static void Video(){
+        Test.startTest();
+
+        Brightcove.Video testObj = new Brightcove.Video();
+        testObj.account_id = '12345';
+        testObj.ad_keys = 'test=foo';
+        testObj.clip_source_video_id = '4t24052705';
+        testObj.complete = false;
+        testObj.created_at = '2017-01-01T13:00:00.000';
+        testObj.cue_points = new List<Brightcove.CuePoint>();
+        testObj.custom_fields = new Map<String,String>();
+        testObj.description = 'This is a test';
+        testObj.digital_master_id = '8457028t4y20t';
+        testObj.economics = 'AD_FREE';
+        testObj.folder_id = '923000h20ghr08g';
+        testObj.custom_fields = new Map<String,Brightcove.Geo>();
+        testObj.has_digital_master = false;
+        testObj.id = 'r8gh3g7h39r7gh39g';
+        testObj.images = new Map<String,Brightcove.Image>();
+        testObj.long_description = 'This is a test';
+        testObj.name = 'Test Obj';
+        testObj.original_filename = 'test.mp4';
+        testObj.projection = 'This is a test';
+        testObj.published_at = '2017-01-01T12:00:00.000Z';
+        testObj.reference_id = '2408th20r8h308rg';
+        testObj.schedule = new Brightcove.Schedule();
+        testObj.state = 'ACTIVE';
+        testObj.tags = new List<String>();
+        testObj.updated_at = '2017-01-01T12:00:00.000';
 
         Test.stopTest();
     }

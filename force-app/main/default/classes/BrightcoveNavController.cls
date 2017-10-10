@@ -40,5 +40,6 @@ global class BrightcoveNavController {
         }catch(System.Exception ex){
             throw ex;
         }
+        return videoList;
     }
 }
