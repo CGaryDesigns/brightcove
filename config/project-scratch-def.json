@@ -1,7 +1,33 @@
 {
-    "orgName": "cgary Company",
-    "edition": "Developer",
+    "orgName": "Follett Scratch",
+    "country": "US",
+
+    "edition": "Enterprise",
+    "features": "API;AuthorApex;Communities;CustomerSelfService;CustomApps;CustomTabs;ForceComPlatform;ServiceCloud;Sites",
     "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+        "enabled": [
+            "S1DesktopEnabled",
+            "AsyncSaveEnabled",
+            "ChatterEnabled",
+            "EnhancedEmailEnabled",
+            "NetworksEnabled",
+            "SocialProfilesEnable",
+            "ShowViewHierarchyLink",
+            "IsActivityRemindersEnabled",
+            "IsEmailTrackingEnabled",
+            "IsGroupTasksEnabled",
+            "IsMultidayEventsEnabled",
+            "IsRecurringEventsEnabled",
+            "IsRecurringTasksEnabled",
+            "SingleSearchResultShortcutEnabled",
+            "SingleSearchResultShortcutEnabled",
+            "IsCreateEditOnArticlesTabEnabled",
+            "IsCreateEditOnArticlesTabEnabled",
+            "IsKnowledgeEnabled",
+            "ShowArticleSummariesCustomerPortal",
+            "ShowArticleSummariesInternalApp",
+            "ShowArticleSummariesPartnerPortal",
+            "ShowValidationStatusField"
+        ]
     }
 }

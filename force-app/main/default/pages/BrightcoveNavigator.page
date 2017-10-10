@@ -3,6 +3,7 @@
     applyHtmlTag="false"
     cache="false"
     contentType="text/html"
+    controller="BrightcovenavController"
     doctype="html-5.0"
     id="BrightcoveNavigator"
     label="BrightCoveNavigator"
@@ -20,13 +21,15 @@
         <apex:includeScript id="AngularJSCore" value="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"/>
     </head>
     
-    <body>
+    <body ng-app="pageApp">
         <apex:slds/>
 
-        <div class="slds-scope">
+        <div class="slds-scope" ng-controller="MainController">
             <div class="slds-grid slds-grid_pull-padded-medium">
                 <div class="slds-col slds-p-horizontal_medium">
                     <h2 class="slds-text-title_caps">Brightcove Navigator</h2>
+
+
                 </div>
             </div>
 
@@ -46,7 +49,24 @@
     </body>
 
     <script type="text/javascript">
-
+        //define AngularJS Single Page Application
+        let pageApp = angular.module('pageApp',[])
+                             //this factory in a singleton that is designed to provide access to the 
+                             //remote action methods of the defined controller.
+                             .factory('SFDCService',['$q','$log','$rootScope',function($q,$log,$rootScope){
+                                var singletonObj = {};
+                                
+                                return singletonObj;
+                             }])
+                             //this is the primary entry point of the Angular SPA app.
+                             .controller('MainController',['$scope','$log','SFDCService',function($scope,$log,SFDCService){
+                                 //initialization function.
+                                let initialize = function(){
+                                    $log.info('The Application Started.');
+                                }
+                                //startup Application.
+                                initialize();
+                             }]);
     </script>
 
 </html>
