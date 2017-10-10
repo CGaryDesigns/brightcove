@@ -33,7 +33,7 @@ global class Brightcove {
         public Boolean complete { get; set; }
         public String created_at { get; set; }
         public List<Brightcove.CuePoint> cue_points { get; set; }
-        public Msp<String,String> custom_fields { get; set; }
+        public Map<String,String> custom_fields { get; set; }
         public String description { get; set; }
         public String digital_master_id { get; set; }
         public String economics { get; set; }
