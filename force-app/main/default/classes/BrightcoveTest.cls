@@ -125,7 +125,7 @@ private class BrightcoveTest {
         testObj.digital_master_id = '8457028t4y20t';
         testObj.economics = 'AD_FREE';
         testObj.folder_id = '923000h20ghr08g';
-        testObj.custom_fields = new Map<String,Brightcove.Geo>();
+        testObj.geo = new Map<String,Brightcove.Geo>();
         testObj.has_digital_master = false;
         testObj.id = 'r8gh3g7h39r7gh39g';
         testObj.images = new Map<String,Brightcove.Image>();
