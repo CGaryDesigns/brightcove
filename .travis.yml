@@ -17,4 +17,4 @@ before_install:
   --username $USERNAME --setdefaultdevhubusername -a HubOrg -r https://test.salesforce.com
 script:
 - sfdx force:source:convert -r force-app -d target
-- sfdx force:mdapi:deploy -d target -w 2 -u HubOrg
+- sfdx force:mdapi:deploy -d target -w 10 -u HubOrg
