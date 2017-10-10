@@ -45,6 +45,12 @@
                                         <span class="slds-assistive-text">Expand Tree Item</span>
                                     </button>
                                     <span class="slds-truncate" title="folderItem.name">{{folderItem.name}}</span>
+                                    <span class="slds-icon_container slds-icon-utility-video slds-m-right_xx-small" title="Number of Videos">
+                                        <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" aria-hidden="true">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#video')}"/>
+                                        </svg>
+                                    </span>
+                                    {{folderItem.video_count}}
                                 </div>
                             </li>
                             <!--END: Tree Item -->
