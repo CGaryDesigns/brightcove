@@ -17,19 +17,42 @@
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
     <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <title>Brightcove Navigator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <apex:includeScript id="AngularJSCore" value="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"/>
+        <apex:slds/>
     </head>
     
     <body ng-app="pageApp">
-        <apex:slds/>
+        
 
         <div class="slds-scope" ng-controller="MainController">
             <div class="slds-grid slds-grid_pull-padded-medium">
                 <div class="slds-col slds-p-horizontal_medium">
                     <h2 class="slds-text-title_caps">Brightcove Navigator</h2>
-
-
+                    <!-- BEGIN: Folder Tree -->
+                    <div class="slds-tree_container" role="application">
+                        <h4 class="slds-text-title_caps" id="treeheading">Folder List</h4>
+                        <ul class="slds-tree" role="tree" aria-labelledby="treeheading">
+                            <!--BEGIN: Tree Item -->
+                            <li role="treeitem" ng-repeat="folderItem in folderList" aria-level="1">
+                                <div class="slds-tree__item">
+                                    <button class="slds-button slds-button_icon slds-m-right_x-small" title="Expand Tree Item">
+                                        <svg class="slds-button__icon slds-button__icon_small" aria-hidden="true">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#chevronright')}"/>
+                                        </svg>
+                                        <span class="slds-assistive-text">Expand Tree Item</span>
+                                    </button>
+                                    <span class="slds-truncate" title="folderItem.name">{{folderItem.name}}</span>
+                                </div>
+                            </li>
+                            <!--END: Tree Item -->
+                        </ul>
+                    </div>
+                    <!-- END: Folder Tree -->
+                    
                 </div>
             </div>
 
@@ -55,14 +78,46 @@
                              //remote action methods of the defined controller.
                              .factory('SFDCService',['$q','$log','$rootScope',function($q,$log,$rootScope){
                                 var singletonObj = {};
-                                
+                                //This method is responsible for obtaining the folders for an account.
+                                singletonObj.ObtainFolders = function(offset){
+                                    let deferred = $q.defer();
+                                    Visualforce.remoting.Manager.invokeAction(
+                                        '{!$RemoteAction.BrightcoveNavController.GetFolderList}',
+                                        offset,
+                                        function(result,event){
+                                            $rootScope.$apply(function(){
+                                                if(event.status){
+                                                    deferred.resolve(result);
+                                                } else {
+                                                    deferred.reject(event.message);
+                                                }
+                                            });
+                                        },
+                                        {
+                                            timeout:60000,
+                                            escape:false
+                                        }
+                                    );
+                                    return deferred.promise;
+                                }
                                 return singletonObj;
                              }])
                              //this is the primary entry point of the Angular SPA app.
                              .controller('MainController',['$scope','$log','SFDCService',function($scope,$log,SFDCService){
+                                 //the list of folders
+                                 $scope.folderList = [];
                                  //initialization function.
                                 let initialize = function(){
                                     $log.info('The Application Started.');
+                                    //make the Call to Obtain the folders
+                                    SFDCService.ObtainFolders(0).then(
+                                        function(result){
+                                            $scope.folderList = result;
+                                        },
+                                        function(reject){
+                                            $log.error(reject);
+                                        }
+                                    );
                                 }
                                 //startup Application.
                                 initialize();

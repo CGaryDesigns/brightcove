@@ -25,4 +25,20 @@ global class BrightcoveNavController {
         }
         return folderList;
     }
+    /**
+     * @description: The purpose of this method is to provide a list of videos
+     *               from a particular folder for a Brightcove Account
+     * @param String folderId       The folder Id to obtain the videos for.
+     * @param Integer offset        the start record to begin retrieving the videos.
+     * @return List<Brightcove.Video>   the list of videos to return
+     **/
+    @RemoteAction
+    public static List<Brightcove.Video> GetVideoList(String folderId, Integer offset){
+        List<Brightcove.Video> videoList;
+        try{
+            videoList = BrightcoveService.ObtainVideosInFolder(folderId, offset);
+        }catch(System.Exception ex){
+            throw ex;
+        }
+    }
 }
